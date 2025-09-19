@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Report</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .meta {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 14px;
+      border: 1px solid #ddd;
+      text-align: center;
+      font-size: 16px;
+    }
+    th {
+      background: #2c3e50;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    .status {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .pass { color: green; }
+    .fail { color: red; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Examination Result</h1>
+    <div class="meta">
+      Student Name: <strong>Shivam </strong><br>
+      Roll No: <strong>10234</strong><br>
+      Date: <strong>16-Sep-2025</strong>
+    </div>
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Marks Obtained</th>
+        <th>Total Marks</th>
+      </tr>
+      <tr>
+        <td>Mathematics</td>
+        <td>85</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>78</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td>88</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Social Studies</td>
+        <td>74</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td> Computer</td>
+        <td> 80</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Hindi</td>
+        <td>95</td>
+        <td>100</td>
+      </tr>
+    </table>
+    <div class="status pass">
+      Result: PASS 🎉
+    </div>
+  </div>
+</body>
+</html>

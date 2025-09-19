@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .math{
+            font: size 50px;
+            display:inline; 
+        }
+         body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .quiz-container {
+      width: 400px;
+      margin: auto;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+    .option {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .option:hover {
+      background-color: #f0f0f0;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+   <center><h1 class="math">Math Exam</h1></center><br>
+   <h2>Question 5</h2>
+    <div class="quiz-container">
+    <h2>Quiz Question</h2>
+    <p> 20+(90÷2) is equal to: </p>
+
+    <div class="option" onclick="checkAnswer(this, false)">71</div>
+    <div class="option" onclick="checkAnswer(this, false)">75</div>
+    <div class="option" onclick="checkAnswer(this, true)">65</div>
+    <div class="option" onclick="checkAnswer(this, false)">74</div>
+
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function checkAnswer(element, isCorrect) {
+      if (isCorrect) {
+        document.getElementById("result").innerHTML = "click on next ";
+        document.getElementById("result").style.color = "red";
+      } else {
+        document.getElementById("result").innerHTML = "Click on next";
+        document.getElementById("result").style.color = "red";
+      }
+    }
+  </script>
+  <footer>
+    <button><a href="mathquestion5.html">NEXT</a></button>
+  </footer>
+
+</body>
+</html>
